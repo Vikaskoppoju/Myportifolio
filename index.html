@@ -74,9 +74,12 @@
     }
     .profile h1{
         font-size:80px;
-        color: #266150;
+     
         font-weight: bolder;
         line-height: 100px;
+        border-radius: 23px;
+        color: linear-gradient(145deg, #296856, #225748);
+
     }
     .profile p{
         font-size: 15px;
@@ -285,7 +288,77 @@
         display: block;
         padding: 0px;
     }
+    .education img{
+        width: 300px;
+        height: 300px;
+    }
+    .certify img {
+    height: 300px;
+    width: 300px;
+}
+.project{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.project img{
+    width: 300px;
+    height: 300px;
+}
     
+    
+    }
+    .footer img{
+        height: 50px;
+        width: 50px;
+        
+    }
+    .edu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap-reverse;
+    }
+    .education img{
+        max-height: 600px;
+        max-width: 600px;
+    }
+    .certify{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap-reverse;
+    }
+    .certify img{
+        max-height: 600px;
+        max-width: 600px;
+    }
+    .project{
+        display: flex;
+        justify-content: space-between;
+        /* flex-wrap:wrap-reverse; */
+    }
+    .project img{
+        max-height: 600px;
+        max-width: 600px;
+    }
+    
+    footer{
+        background-color: #f9faf5;
+        padding: 20px;
+        box-shadow: 0 0 45px grey;
+    }
+    .foot-nav{
+        display: flex;
+        flex-direction: column;
+    }
+    section h1{
+        color: #225748;
+        font-weight: bold;
+        font-size: 35px;
+    }
+    .certificates h2{
+        color: #296856;
+    }
+    .projects h2{
+        color:#296856;
     }
 
 </style>
@@ -299,19 +372,21 @@
             <a href="#contact" onclick="myFunction()"><i class="fa-solid fa-address-book"></i>Contact</a>
            <a href="#education" onclick="myFunction()"><i class="fa-solid fa-user-graduate"></i>Educations</a>
            <a href="#project" onclick="myFunction()"><i class="fa-solid fa-laptop-code"></i>Project</a>
-           <a href="#certificates" onclick="myFunction()"><i class="fa-solid fa-laptop-code"></i>Certifications</a>
-            <a href="#skill" onclick="myFunction()"><i class="fa-solid fa-house-user"></i>Skills</a>
+           <a href="#certificate" onclick="myFunction()"><i class="fa-solid fa-laptop-code"></i>Certifications</a>
+            <a href="#skill" onclick="myFunction()"><i class="fa-solid fa-trophy"></i>Skills</a>
         </div>
     </header>
     <section class="first" id="home">
         <div class="profileimg">
-            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydGZvbGlvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <!-- <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydGZvbGlvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""> -->
+            <img src="my1.jpg" alt="">
         </div>
         <div class="profile">
             <h1>I'm Vikas Kumar Koppoju</h1>
             <p class="designation">Web Designer & Programmer</p>
             <p>I am pursuing a Bachelor of Technology in Computer Science and Engineering Stream at Sri Vasavi Engineering College located at Pedatadepalli, West Godavari, Andhra Pradesh.
-                I am a passionate student about learning new technologies and am very much interested in developing various software applications. I am an innovative person who solves problems from a different thinking perspective. My interest in technologies is very keen and I participated in MICROSOFT ENGAGE INTERN 2022 and was selected for the Mentorship program in my Second Year of B.Tech  I had done a project in Machine Learning in my second year itself with association to MICROSOFT. I am working on Web Applications using PHP, React JS, and a Face Emotion Recognition model using Convulational Neural Networks.</p>
+                I am a passionate student about learning new technologies and am very much interested in developing various software applications. I am an innovative person who solves problems from a different thinking perspective. My interest in technologies is very keen and I participated in OASIS INFOBYTE SIP. I had done a project in Machine Learning in my thrid year as part of our college curriculum. I am working on Web Applications using React JS, Django and Ml Classifications
+            </p>
         </div>
     </section>
     <section class="second" id="skill">
@@ -331,14 +406,15 @@
             <progress  value="32" max="35"> 32% </progress>
             </div>
             <div>
-            <p>Java Programming</p>
-            <progress  value="32" max="30"> 32% </progress>
+            <p>Machine Learning</p>
+            <progress  value="32" max="50"> 32% </progress>
             </div>
         </div>
         
     </section>
     <section class="education" id="education">
         <h1>Education</h1>
+        <div class="edu">
         <div class="colleges">
             <div>
             <h2><i class="fa-solid fa-building-columns"></i>SRI VASAVI ENGINEERING COLLEGE</h2>
@@ -356,35 +432,45 @@
             <p>CGPA:8.8</p>
             </div>
         </div>
+        <div>
+            <img src="edu1.png" alt="">
+        </div>
+        </div>
     </section>
     <section class="certificates" id="certificate">
         <h1>Certificates</h1>
+        <div class="certify">
         <div class="certi">
         <div>
             <h2>NPTEL</h2>
-            <p>NPTEL certified 75% of the course 
-                Introduction to Internet of Things.</p>
-                <p>NPTEL certified with 52% of the course 
-                Data Science for Engineers.</p>
+            <li>NPTEL certified 75% of the course 
+                Introduction to Internet of Things.</li>
+                <li>NPTEL certified with 52% of the course 
+                Data Science for Engineers.</li>
         </div>
         <div >
-            <h2>NPTEL</h2>
-            <p>NPTEL certified 75% of the course 
-                Introduction to Internet of Things.</p>
-                <p>NPTEL certified with 52% of the course 
-                Data Science for Engineers.</p>
+            <h2>Awards</h2>
+            <p>I won first place in our college's Treasure 
+Hunt (El-dorado) as part </p>
+                <p>of Scud Verve 2k22 
+(Technical Fest).</p>
         </div>
         <div >
-            <h2>NPTEL</h2>
-            <p>NPTEL certified 75% of the course 
-                Introduction to Internet of Things.</p>
-                <p>NPTEL certified with 52% of the course 
-                Data Science for Engineers.</p>
+            <h2>Hackathon</h2>
+            <p>I participated in a 24-hour hackathon
+hosted by our college called Hack Overflow 2K22 </p>
+                <p>in collaboration with SCUD on April 
+29&30, 2022. </p>
+        </div>
+        </div>
+        <div>
+            <img src="edu2.png" alt="">
         </div>
         </div>
     </section>
     <section class="projects" id="project">
         <h1>Projects</h1>
+        <div class="project">
         <div class="pro">
             
             <div>
@@ -394,7 +480,7 @@
                 <p>It is a web application that uses the Random 
                     Forest Algorithm of Machine Learning to 
                     predict disease symptoms.</p>
-                <a href="https://github.com/Vikaskoppoju/Disease-prediction-using-ML/tree/master" target="_blank">Get project source code</a>
+                <a href="https://github.com/Vikaskoppoju/Disease-prediction-using-ML/tree/master" target="_blank"><i class="fa-solid fa-code"></i>Get project source code</a>
             </div>
             <div>
                 <h2>
@@ -403,7 +489,7 @@
                 <p>It is a web application that 
                     displays the culture of Indian states by using 
                     a map to navigate to that state. </p>
-                    <a href="https://github.com/Vikaskoppoju/The-Tianzu/tree/master" target="_blank">Get project source code</a>
+                    <a href="https://github.com/Vikaskoppoju/The-Tianzu/tree/master" target="_blank"><i class="fa-solid fa-code"></i>Get project source code</a>
             </div>
             <h1>
                 Internship
@@ -423,32 +509,21 @@
                 <p>By Oasis Infobyte.</p>
             </div>
         </div>
-    </section> 
-    <section class="contactus" id="contact">
-        <h1>Contact me</h1>
-        <div class="cont">
-            <div>
-                <h3>Email:</h3>
-                <p>koppojuvikaskumar@gmail.com</p>
-            </div>
-            <div>
-                <h3>Whatsapp:</h3>
-                <p>6305535725</p>
-            </div>
-            <div>
-                <h3>Github:</h3>
-                <a href="https://github.com/Vikaskoppoju" target="_blank">https://github.com/Vikaskoppoju</a>
-            </div>
-            <div>
-                <h3>Linkedin:</h3>
-                <a href="https://www.linkedin.com/in/vikas-kumar-koppoju-99b540208/" target="_blank">https://www.linkedin.com/in/vikas-kumar-koppoju-99b540208/</a>
-            </div>
+        <div>
+            <img src="edu3.png" alt="">
         </div>
+        </div>
+    </section> 
+    <footer id="contact">
+        <h3>Contact Me</h3>
+        <div class="foot-nav">
+                <a href="koppojuvikaskumar@gmail.com"><i class="fa-solid fa-envelope"></i>koppojuvikaskumar@gmail.com</a>
+                <a href="6305535725" ><i class="fa-brands fa-whatsapp"></i>6305535725</a>
+                <a href="https://github.com/Vikaskoppoju" target="_blank"><i class="fa-brands fa-github"></i>https://github.com/Vikaskoppoju</a>
+                <a href="https://www.linkedin.com/in/vikas-kumar-koppoju-99b540208/" target="_blank"><i class="fa-brands fa-linkedin"></i>https://www.linkedin.com/in/vikas-kumar-koppoju-99b540208/</a>
+            </div>
 
-    </section>
-    <div class="rating">
-
-    </div>
+    </footer>
       
 </body>
 <script>
